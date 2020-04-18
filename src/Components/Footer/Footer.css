@@ -1,0 +1,15 @@
+.footer{
+    background-color: black;
+}
+.footer-img img{
+    width: 150px;
+    margin-top: 50px;
+}
+.footer p{
+    color: white;
+}
+.footer-text{
+    margin: 20px 0px;
+    padding: 5px;
+}
+    

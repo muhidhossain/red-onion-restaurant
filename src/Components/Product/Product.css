@@ -1,0 +1,17 @@
+.food img{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .food{
+       text-align: center;
+       font-weight: 700;
+       margin-top: 50px;
+       border: none;
+   }
+   .food:hover{
+       box-shadow: 5px 5px 10px gray;
+   }

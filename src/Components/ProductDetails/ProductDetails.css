@@ -1,0 +1,17 @@
+.food-details img{
+    height: 500px;
+}
+.details-text{
+    margin-top: 100px;
+}
+.food-details button{
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+}
+.number-spinner button{
+    background-color: white;
+    color: black;
+}

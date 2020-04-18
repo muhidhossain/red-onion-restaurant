@@ -1,0 +1,18 @@
+.bottom button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+}
+.about-us{
+    margin-top: 20px;
+}
+.bottom-card img{
+    height: 400px;
+}
+.bottom-detail{
+    border: none;
+}

@@ -1,0 +1,46 @@
+.navbar img{
+    width: 150px;
+    margin-left: 20px;
+}
+.navbar{
+    height: 80px;
+}
+.rightNav a{
+    color: black;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.rightNav{
+    margin-right: 20px;
+}
+.signUpBtn{
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px 15px;
+    color: white;
+    border: none;
+}
+.search-container{
+    background-image: url("../../images/bannerbackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 550px;
+    background-size: cover;
+    padding: 250px 0px;
+}
+.search-container input{
+    width: 400px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
+    border: none;
+}
+.search-container button{
+    margin-left: -10px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    border: none;
+    background-color: red;
+    color: white;
+}

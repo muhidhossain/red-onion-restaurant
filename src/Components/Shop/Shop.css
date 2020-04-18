@@ -1,0 +1,11 @@
+.meal-time{
+    display: flex;
+    justify-content: center;
+}
+.shop-container a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: large;
+}

@@ -5,6 +5,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
+// const handleAddInventory = () => {
+//     const foodItem = FakeData[0];
+//     console.log(foodItem)
+//     fetch('https://aqueous-spire-21006.herokuapp.com/addFoodItems', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(FakeData)
+//       })
+//       .then(res => res.json())
+//       .then(data => {
+//           console.log('post successful', data)
+//       })
+// }
+
     return (
         <div className="header-container">
             <div>
@@ -13,8 +29,8 @@ const Header = () => {
                         <img src={logo2} alt=""/>
                     </div>
                     <div className="rightNav">
-                        <a href=""><FontAwesomeIcon icon={faShoppingCart} /></a>
-                        <a href="">Login</a>
+                        <a><FontAwesomeIcon icon={faShoppingCart} /></a>
+                        <a>Login</a>
                         <button className="signUpBtn">Sign up</button>
                     </div>
                 </nav>

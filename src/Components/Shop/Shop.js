@@ -20,21 +20,23 @@ const Shop = () => {
             </div>
             <div>
                 <Router>
-                    <Route path="/breakfast">
-                        <Breakfast></Breakfast>
-                    </Route>
-                    <Route path="/lunch">
-                        <Lunch></Lunch>
-                    </Route>
-                    <Route path="/dinner">
-                        <Dinner></Dinner>
-                    </Route>
-                    <Route exact path="/">
-                        <Lunch></Lunch>
-                    </Route>
-                    <Route path="/product/:productKey">
-                        <ProductDetails></ProductDetails>
-                    </Route>
+                    <Switch>
+                        <Route path="/breakfast">
+                            <Breakfast></Breakfast>
+                        </Route>
+                        <Route path="/lunch">
+                            <Lunch></Lunch>
+                        </Route>
+                        <Route path="/dinner">
+                            <Dinner></Dinner>
+                        </Route>
+                        <Route exact path="/">
+                            <Lunch></Lunch>
+                        </Route>
+                        <Route path="/product/:productKey">
+                            <ProductDetails></ProductDetails>
+                        </Route>
+                    </Switch>
                 </Router>
                 <Bottom></Bottom>
                 <Footer></Footer>

@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Product from '../Product/Product';
-import FakeData from '../FakeData/FakeData';
 import { useState } from 'react';
 import './Dinner.css'
 
 const Dinner = () => {
-    const breakfast = FakeData.slice(12,18);
-    const [product] = useState(breakfast);
+    const [product, setProduct] = useState([]);
+    useEffect(() => {
+        fetch('https://aqueous-spire-21006.herokuapp.com/foodItems')
+        .then(res => res.json())
+        .then(data => {
+            setProduct(data.slice(12,18));
+        })
+    }, [])
     return (
         <div className="container">
            <div className="row">

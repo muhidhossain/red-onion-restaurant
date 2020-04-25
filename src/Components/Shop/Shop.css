@@ -9,3 +9,16 @@
     font-weight: 700;
     font-size: large;
 }
+.meal-time .active{
+    color: red;
+    border-bottom: 5px solid red;
+}
+.meal-time .deactivate{
+    color: black;
+    cursor: pointer;
+}
+.meal-time li{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}

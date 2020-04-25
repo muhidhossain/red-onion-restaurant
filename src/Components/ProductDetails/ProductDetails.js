@@ -2,19 +2,21 @@ import React, { useState, useEffect } from 'react';
 import './ProductDetails.css'
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const ProductDetails = () => {
-    const { productKey } = useParams();
+    const { key } = useParams();
     const [product, setProduct] = useState(null);
+    const [quantity, setQuantity] = useState(1);
+
 
     useEffect(() => {
-        fetch('https://aqueous-spire-21006.herokuapp.com/foodItems/' + productKey)
-        .then(res => res.json())
-        .then(data => {
-            setProduct(data)
-        })
-    }, [])
+        fetch('https://aqueous-spire-21006.herokuapp.com/foodItems/' + key)
+            .then(res => res.json())
+            .then(data => {
+                setProduct(data)
+            })
+    }, [key])
 
 
     return (
@@ -31,13 +33,17 @@ const ProductDetails = () => {
                 {
                     product && <h3>$ {product.price}</h3>
                 }
-                <br/>
+                <br />
                 <div style={{ display: 'flex' }}>
-                    <button className="col-md-3"><FontAwesomeIcon icon={faShoppingCart} /> Add</button>
-                    <div className="input-group number-spinner col-md-4">
-                            <button id="minusbtn"><FontAwesomeIcon icon={faMinus} /></button>
-                            <p id="quantity2" type="text" className="form-control text-center" value="1">1</p>
-                            <button id="pludBtn"><FontAwesomeIcon icon={faPlus} /></button>
+                    <button style={{outline:'none'}} className="addButton col-md-2"><FontAwesomeIcon icon={faShoppingCart} /> Add</button>
+                    <div className="col-md-4">
+                        <div className="action d-flex align-items-center number-spinner">
+                            <button onClick={() => setQuantity(quantity <= 1 ? 1 : quantity - 1)}>-</button>
+                            <p>
+                                {quantity}
+                            </p>
+                            <button onClick={() => setQuantity(quantity + 1)}>+</button>
+                        </div>
                     </div>
                 </div>
             </div>

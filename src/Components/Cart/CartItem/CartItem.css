@@ -1,0 +1,24 @@
+.cartItem img{
+    width: 100px;
+    height: 100px;
+}
+.cartItem{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.cartText button{
+    background-color: white;
+    color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 10px;
+    outline: none;
+    font-size: 20px;
+}
+.cartItem:hover{
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+.cartText{
+    padding-top: 10px;
+}

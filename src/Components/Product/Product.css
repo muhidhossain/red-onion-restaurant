@@ -1,6 +1,6 @@
 .food img{
-    height: 300px;
-    width: 300px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     display: block;
     margin-left: auto;
@@ -11,6 +11,7 @@
        font-weight: 700;
        margin-top: 50px;
        border: none;
+       padding: 20px 5px;
    }
    .food:hover{
        box-shadow: 5px 5px 10px gray;

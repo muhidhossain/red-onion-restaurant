@@ -7,22 +7,44 @@ import Header from './Components/Header/Header';
 import Bottom from './Components/Bottom/Bottom';
 import Footer from './Components/Footer/Footer';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
+import Navbar from './Components/Navbar/Navbar';
+import Cart from './Components/Cart/Cart';
+import Login from './Components/Login/Login';
+import SignUp from './Components/SignUp/SignUp';
+import Logout from './Components/Login/Logout/Logout';
 
 function App() {
+
   return (
     <div>
-      <Header></Header>
+
       <Router>
         <Switch>
           <Route exact path="/">
+            <Navbar></Navbar>
+            <Header></Header>
             <Shop></Shop>
+            <Bottom></Bottom>
           </Route>
           <Route path="/product/:key">
+          <Navbar></Navbar>
             <ProductDetails></ProductDetails>
+          </Route>
+          <Route path="/cart">
+          <Navbar></Navbar>
+            <Cart></Cart>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signUp">
+            <SignUp></SignUp>
+          </Route>
+          <Route path="/logout">
+            <Logout></Logout>
           </Route>
         </Switch>
       </Router>
-      <Bottom></Bottom>
       <Footer></Footer>
     </div>
   );

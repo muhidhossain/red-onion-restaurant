@@ -1,0 +1,13 @@
+.orderSummary button{
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.orderSummary{
+    margin-bottom: 100px;
+    padding: 10px;
+    border-left: 1px solid lightgray;
+}

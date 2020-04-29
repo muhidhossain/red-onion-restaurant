@@ -1,0 +1,28 @@
+.signUp-container{
+    margin-top: 40px;
+    text-align: center;
+}
+.signUp-container input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+.red-onion-logo img{
+    height: 80px;
+    margin-top: 20px;
+}
+.signUp-btn{
+    background-color: red;
+    color: white;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.signUp-container button{
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}

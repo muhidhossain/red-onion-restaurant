@@ -1,0 +1,13 @@
+.logout-container img{
+    height: 80px;
+    margin-top: 20px;
+}
+.logout-btn{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

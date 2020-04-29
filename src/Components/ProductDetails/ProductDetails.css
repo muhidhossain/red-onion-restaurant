@@ -1,22 +1,24 @@
 .food-details img{
-    margin-top: 50px;
-    height: 500px;
+    margin-top: 100px;
+    width: inherit;
 }
 .details-text{
     margin-top: 100px;
+    width: inherit;
 }
 .addButton{
     background-color: red;
     border: none;
     border-radius: 20px;
     color: white;
+    padding: 5px 10px;
 }
 .number-spinner p{
-    margin-top: 15px;
+    margin-top: 16px;
 }
 .number-spinner button{
     font-size: 20px;
-    padding: 0px 20px;
+    padding: 0px 21px;
     background-color: white;
     border: none;
     outline: none;
@@ -25,4 +27,5 @@
     border: 1px solid lightgray;
     margin-left: 20px;
     border-radius: 20px;
+    width: 120px;
 }

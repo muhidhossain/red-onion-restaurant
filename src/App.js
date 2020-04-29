@@ -11,7 +11,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Cart from './Components/Cart/Cart';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
-import Logout from './Components/Login/Logout/Logout';
+import Logout from './Components/Logout/Logout';
 
 function App() {
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import './Logout.css'
-import Auth from '../useAuth';
-import logo from '../../../images/logo/logo2.png'
+import './Logout.css';
+import logo from '../../images/logo/logo2.png'
+import Auth from '../Login/useAuth';
 
 const Logout = () => {
     const auth = Auth();

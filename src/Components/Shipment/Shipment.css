@@ -1,0 +1,28 @@
+.ship-form input{
+    display: block;
+    margin-top: 20px;
+    width: 320px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.error{
+    color: red;
+}
+.ship-info{
+    margin-top: 100px;
+}
+.ship-submit{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+}
+.shipCart{
+    height: 80px;
+    width: 300px;
+}
+.shipCart img{
+    height: 50px !important;
+    width: 50px;
+}

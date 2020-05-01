@@ -38,8 +38,9 @@ export const PrivateRoute = ({ children, ...rest }) => {
 }
 
 const getUser = user => {
-    const { displayName, email, photoURL } = user;
-    return { name: displayName, email, photo: photoURL };
+    const {displayName, email, photoURL} = user;
+
+    return { name: displayName, email, photo: photoURL};
 }
 
 const Auth = () => {
@@ -64,7 +65,6 @@ const Auth = () => {
             setUser(null)
             return true;
         }).catch(function (error) {
-            console.log(error);
             return false;
         });
     }
@@ -103,7 +103,6 @@ const Auth = () => {
                     firebase.auth().currentUser.updateProfile({
                         displayName: user.name
                     }).then(() => {
-                        console.log(res);
                         const createdUser = { ...user };
                         createdUser.isSignedIn = true;
                         createdUser.error = '';
@@ -111,7 +110,6 @@ const Auth = () => {
                     });
                 })
                 .catch(err => {
-                    console.log(err.message)
                     const createdUser = { ...user };
                     createdUser.isSignedIn = false;
                     createdUser.error = err.message;
@@ -126,19 +124,16 @@ const Auth = () => {
         if (user) {
             firebase.auth().signInWithEmailAndPassword(user.email, user.password)
                 .then(res => {
-                    console.log(res);
                     const createdUser = { ...user };
                     createdUser.isSignedIn = true;
                     createdUser.error = '';
                     setUser(createdUser);
                 })
                 .catch(err => {
-                    console.log(err.message)
                     const createdUser = { ...user };
                     createdUser.isSignedIn = false;
                     createdUser.error = err.message;
                     setUser(createdUser);
-                    console.log(err)
                 })
         }
         event.preventDefault();

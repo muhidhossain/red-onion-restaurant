@@ -1,9 +1,7 @@
 .food-details img{
-    margin-top: 100px;
     width: inherit;
 }
 .details-text{
-    margin-top: 100px;
     width: inherit;
 }
 .addButton{
@@ -28,4 +26,7 @@
     margin-left: 20px;
     border-radius: 20px;
     width: 120px;
+}
+.food-details{
+    margin-top: 100px;
 }

@@ -12,6 +12,8 @@ import Cart from './Components/Cart/Cart';
 import Login from './Components/Login/Login';
 import SignUp from './Components/SignUp/SignUp';
 import Logout from './Components/Logout/Logout';
+import Shipment from './Components/Shipment/Shipment';
+import TrackOrder from './Components/TrackOrder/TrackOrder';
 
 function App() {
 
@@ -42,6 +44,14 @@ function App() {
           </Route>
           <Route path="/logout">
             <Logout></Logout>
+          </Route>
+          <Route path="/shipment">
+            <Navbar></Navbar>
+            <Shipment></Shipment>
+          </Route>
+          <Route path="/trackOrder">
+            <Navbar></Navbar>
+            <TrackOrder></TrackOrder>
           </Route>
         </Switch>
       </Router>

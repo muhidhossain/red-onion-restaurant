@@ -1,0 +1,10 @@
+.paymentBtn{
+    margin-top: 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 600;
+}

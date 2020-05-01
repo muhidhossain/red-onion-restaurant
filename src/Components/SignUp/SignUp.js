@@ -7,7 +7,7 @@ import logo from '../../images/logo/logo2.png'
 const SignUp = () => {
     const auth = Auth();
     const { register, watch } = useForm();
-    console.log(auth.user)
+    
     return (
         <div>
             <div className="d-flex justify-content-center red-onion-logo">
@@ -52,6 +52,14 @@ const SignUp = () => {
                         }
                         {
                             auth.user && auth.user.error && <p style={{ color: 'red' }}>{auth.user.error}</p>
+                        }
+                        {
+                            auth.user && auth.user.isSignedIn ?
+                                <div>
+                                    <p style={{ color: 'green' }}>Account created</p>
+                                    <a href="/" style={{textDecoration:'none'}}>Go to home page.</a>
+                                </div> :
+                                <p style={{ display: 'none' }}></p>
                         }
                         <p style={{ marginTop: '20px' }}>
                             <a style={{ textDecoration: 'none', fontWeight: '600' }} href="/login">Already have an account</a>

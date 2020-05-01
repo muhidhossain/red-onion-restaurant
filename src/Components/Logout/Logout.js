@@ -5,7 +5,7 @@ import Auth from '../Login/useAuth';
 
 const Logout = () => {
     const auth = Auth();
-    console.log(auth.user)
+    
     return (
         <div className="container logout-container">
             <div className="d-flex justify-content-center">
@@ -18,7 +18,7 @@ const Logout = () => {
                         !auth.user ?
                             <div>
                                 <p style={{ color: 'green', marginTop: '10px' }}>Logout successful.</p>
-                                <a href="/">Go to home page.</a>
+                                <a href="/" style={{textDecoration:'none'}}>Go to home page.</a>
                             </div> :
                             <p style={{ display: 'none' }}></p>
                     }

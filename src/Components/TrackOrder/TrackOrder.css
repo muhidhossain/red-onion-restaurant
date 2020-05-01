@@ -1,0 +1,38 @@
+.trackMap img{
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.trackBike img{
+    height: 100px;
+    width: 100px;
+}
+.trackDetails{
+    background-color: lightgray;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+.trackDetails ul{
+    background-color: white;
+    border-radius: 10px;
+}
+.trackHelmet img{
+    height: 80px;
+    width: 80px;
+}
+.trackHelmet{
+    background-color: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.trackDetails button{
+    width: 100%;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}

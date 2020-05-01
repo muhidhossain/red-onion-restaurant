@@ -5,7 +5,6 @@ import logo from '../../images/logo/logo2.png'
 
 const Login = () => {
     const auth = Auth();
-    console.log(auth)
     return (
         <div className="d-flex justify-content-center">
             <div className="login-container">
@@ -27,7 +26,7 @@ const Login = () => {
                         auth.user && auth.user.name ?
                             <div>
                                 <p style={{ color: 'green' }}>Login successful.</p>
-                                <a href="/">Go to home page.</a>
+                                <a href="/" style={{textDecoration:'none'}}>Go to home page.</a>
                             </div> :
                             <p style={{ display: 'none' }}></p>
                     }

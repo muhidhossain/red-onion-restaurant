@@ -34,9 +34,9 @@ const Cart = () => {
     }, []);
 
     return (
-        <div className="container" style={{ marginTop: '50px' }}>
+        <div className="container" style={{ marginTop: '100px', marginBottom: '150px' }}>
             <div className="row">
-                <div className="col-md-8" style={{ marginTop: '80px' }}>
+                <div className="col-md-8">
                     {
                         cart.map(food => <CartItem
                             key={food.key}
@@ -51,8 +51,8 @@ const Cart = () => {
                 <div className="col-md-4">
                     {
                         cart.length ? 
-                        <OrderSummary cart={cart}></OrderSummary>
-                        : <h5 style={{textAlign: 'center', marginTop: '90px', marginBottom: '350px'}}>healthy food, healthy life...</h5>
+                        <OrderSummary shipmentOrCart={true} cart={cart}></OrderSummary>
+                        : <h5 style={{textAlign: 'center', marginTop: '13px', marginBottom: '350px'}}>healthy food, healthy life...</h5>
                     }
                 </div>
             </div>

@@ -76,13 +76,17 @@ const ProductDetails = () => {
                             <div className="action d-flex align-items-center number-spinner">
                                 <button onClick={() => setQuantity(quantity <= 1 ? 1 : quantity - 1)}>-</button>
                                 <p>{quantity}</p>
-                                <button onClick={() => setQuantity(quantity + 1)}>+</button>
+                                <button onClick={() => setQuantity(quantity >= 5 ? 5 : quantity + 1)}>+</button>
                             </div>
                         </div>
                     </div>
                     <br/>
                     {
-                        addedKey && <p style={{color: 'green'}}>Successfully added to cart.</p>
+                        addedKey && 
+                        <div>
+                            <p style={{color: 'green'}}>Successfully added to cart.</p>
+                            <a style={{textDecoration:'none'}} href="/cart">Go to Cart</a>
+                        </div>
                     }
                 </div>
                 <div className="col-md-6">

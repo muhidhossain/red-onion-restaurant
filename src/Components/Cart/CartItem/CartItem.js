@@ -15,7 +15,7 @@ const CartItem = (props) => {
                 </div>
                 <div className="col-md-9 cartText">
                     <div className="d-flex justify-content-between">
-                        <Link to={"/product/" + key}>
+                        <Link style={{textDecoration:'none'}} to={"/product/" + key}>
                             <div>
                                 <h6>{name}</h6>
                                 <p>

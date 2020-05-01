@@ -4,7 +4,8 @@
 }
 .footer-img img{
     width: 150px;
-    margin-top: 50px;
+    margin-top: 20px;
+    padding-top: 5px;
 }
 .footer p{
     color: white;

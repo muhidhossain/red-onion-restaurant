@@ -13,7 +13,8 @@ const Shop = (props) => {
             .then(data => {
                 setProduct(data);
             })
-            .catch(err => console.log(err))
+            .catch(err => 
+                console.log(err))
     }, [product.length])
 
     const selectedFoods = product.filter(food => food.type === selectedType)

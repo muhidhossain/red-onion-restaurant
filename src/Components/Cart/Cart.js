@@ -36,7 +36,7 @@ const Cart = () => {
     return (
         <div className="container" style={{ marginTop: '100px', marginBottom: '150px' }}>
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-7">
                     {
                         cart.map(food => <CartItem
                             key={food.key}

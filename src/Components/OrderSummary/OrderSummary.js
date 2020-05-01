@@ -42,7 +42,7 @@ const OrderSummary = (props) => {
                             <Link to="/shipment">
                                 <button style={{ fontWeight: '600' }}>Proceed Checkout</button>
                             </Link> :
-                            <Popup trigger={<button style={{ fontWeight: '600' }}>Login to Proceed</button>} contentStyle={{ width: '320px', marginTop:'20px' }} position='center center'>
+                            <Popup trigger={<button style={{ fontWeight: '600' }}>Login to Proceed</button>} contentStyle={{ width: '320px', marginTop:'20px', marginLeft:'65px' }} position='center center'>
                                 <Login></Login>
                             </Popup>
                     }

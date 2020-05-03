@@ -86,7 +86,7 @@ const Auth = () => {
             isValidPassword = e.target.value.length > 7 && hasNumber(e.target.value);
         }
         if (e.target.name === "confirm_password") {
-            isValidConfirmPassword = e.target.value.length > 8 && hasNumber(e.target.value);
+            isValidConfirmPassword = e.target.value.length > 7 && hasNumber(e.target.value);
         }
 
         newUserInfo[e.target.name] = e.target.value

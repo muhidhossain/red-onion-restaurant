@@ -83,7 +83,7 @@ const Auth = () => {
             isValidEmail = is_valid_email(e.target.value);
         }
         if (e.target.name === "password") {
-            isValidPassword = e.target.value.length > 8 && hasNumber(e.target.value);
+            isValidPassword = e.target.value.length > 7 && hasNumber(e.target.value);
         }
         if (e.target.name === "confirm_password") {
             isValidConfirmPassword = e.target.value.length > 8 && hasNumber(e.target.value);

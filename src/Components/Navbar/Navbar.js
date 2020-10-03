@@ -27,8 +27,8 @@ const Navbar = () => {
                                 <Link to="/">
                                     {
                                         auth.user && auth.user.photo ?
-                                        <img style={{height: '20px', width: '20px',border:'2px solid red', borderRadius: '10px'}} src={auth.user.photo} alt=""/> :
-                                        <FontAwesomeIcon style={{color: 'red', border:'2px solid red', borderRadius:'10px'}} icon={faUserCircle} />
+                                            <img style={{ height: '20px', width: '20px', border: '2px solid red', borderRadius: '10px' }} src={auth.user.photo} alt="" /> :
+                                            <FontAwesomeIcon style={{ color: 'red', border: '2px solid red', borderRadius: '10px' }} icon={faUserCircle} />
                                     }
                                 </Link> :
                                 <Link to="/signUp">

@@ -16,10 +16,8 @@ import Shipment from './Components/Shipment/Shipment';
 import TrackOrder from './Components/TrackOrder/TrackOrder';
 
 function App() {
-
   return (
     <div>
-
       <Router>
         <Switch>
           <Route exact path="/">

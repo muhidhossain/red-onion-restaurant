@@ -9,7 +9,7 @@ const ProductDetails = () => {
     const { key } = useParams();
     const [product, setProduct] = useState(null);
     const [quantity, setQuantity] = useState(1);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
     const [addedKey, setAddedKey] = useState(null);
 
     useEffect(() => {
@@ -48,8 +48,6 @@ const ProductDetails = () => {
         setAddedKey(product.key)
         addToDatabaseCart(product.key, count);
     }
-
-
 
     return (
         <div className="container food-details" >
